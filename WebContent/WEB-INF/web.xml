@@ -58,4 +58,10 @@
     <servlet-name>CallByJs</servlet-name>
     <url-pattern>/callbyjs</url-pattern>
   </servlet-mapping>
+  <listener>
+    <listener-class>com.listners.ServerListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.listners.SessionInitListner</listener-class>
+  </listener>
 </web-app>
