@@ -1,5 +1,8 @@
 package com.listners;
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
@@ -19,9 +22,20 @@ public class ServerListener implements ServletContextListener {
 	/**
 	 * @see ServletContextListener#contextDestroyed(ServletContextEvent)
 	 */
+	
+	FileWriter fw;
 	public void contextDestroyed(ServletContextEvent arg0) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stu
 		System.out.println("server down....");
+		try {
+			fw = new FileWriter("D:\\royal\\advance java\\Cw2_adv_java_2\\src\\com\\listners\\abc.txt");
+			fw.write("ok");
+			fw.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 
 	/**

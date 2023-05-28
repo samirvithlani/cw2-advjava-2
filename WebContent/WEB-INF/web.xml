@@ -64,4 +64,14 @@
   <listener>
     <listener-class>com.listners.SessionInitListner</listener-class>
   </listener>
+  <servlet>
+    <description></description>
+    <display-name>ForEachController</display-name>
+    <servlet-name>ForEachController</servlet-name>
+    <servlet-class>com.controller.ForEachController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ForEachController</servlet-name>
+    <url-pattern>/foreachcontroller</url-pattern>
+  </servlet-mapping>
 </web-app>
