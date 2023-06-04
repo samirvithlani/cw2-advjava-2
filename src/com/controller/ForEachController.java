@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.w3c.dom.ls.LSInput;
 
+import com.bean.UserBean;
+
 /**
  * Servlet implementation class ForEachController
  */
@@ -28,8 +30,17 @@ public class ForEachController extends HttpServlet {
 		list.add("cpp");
 		list.add("node");
 		
-		request.setAttribute("list", list);
+		UserBean userBean = new UserBean();
+		List<UserBean> lists = new ArrayList<UserBean>();
+		userBean.setId(101);
+		userBean.setName("raj");
+		lists.add(userBean);
+		
+		//request.setAttribute("list", list);
+		request.setAttribute("users", lists);
 		request.getRequestDispatcher("foreach.jsp").forward(request, response);
+		
+		
 		
 		
 		

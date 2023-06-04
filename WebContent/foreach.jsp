@@ -9,8 +9,10 @@
 </head>
 <body>
 
-<c:forEach var="list" items="${list }">
-	<c:out value="${list }"></c:out>
+
+<c:forEach items="${users}" var ="users">
+${users.id }
+<c:out value="${users.name }"></c:out>
 </c:forEach>
 </body>
 </html>
