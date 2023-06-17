@@ -74,4 +74,14 @@
     <servlet-name>ForEachController</servlet-name>
     <url-pattern>/foreachcontroller</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>StudentController</display-name>
+    <servlet-name>StudentController</servlet-name>
+    <servlet-class>com.controller.StudentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentController</servlet-name>
+    <url-pattern>/studentcontroller</url-pattern>
+  </servlet-mapping>
 </web-app>
