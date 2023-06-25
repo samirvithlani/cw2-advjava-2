@@ -14,4 +14,24 @@
 		<tag-class>com.taghandlers.DateConvert</tag-class>
 		<body-content>empty</body-content>
 	</tag>
+	<tag>
+		<name>sum</name>
+		<tag-class>com.taghandlers.SumTagHandler</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>no1</name>
+			<type>int</type>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>no2</name>
+			<type>int</type>
+			<required>true</required>
+		</attribute>
+	</tag>
+	<tag>
+		<name>upper</name>
+		<tag-class>com.taghandlers.UpperCaseHandler</tag-class>
+		<body-content>scriptless</body-content>
+	</tag>
 </taglib>

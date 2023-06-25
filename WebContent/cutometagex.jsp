@@ -11,5 +11,9 @@
 <cu:Hello/>
 <br>
 <cu:dt/>
+<br>
+<cu:sum no2="100" no1="20"/>
+<cu:upper>Hello</cu:upper>
+
 </body>
 </html>
